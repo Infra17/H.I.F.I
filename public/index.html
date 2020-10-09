@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hire Intelligence </h1>
+    <h5>A video chat browser client by Infra</h5>
+    <div id="selectRoom">
+         <label>TYPE ROOM and NAME</label>
+         <br>
+         <input id="roomNumber" type="text"/>
+         <h2 id="CallName"></h2>
+        <p>
+            <input type="inputCallName" type="text"/>
+            <button id="setName">Set Name</button>
+        </p>
+         <button id="Go">Go</button>
+
+    </div>
+    <div id="conferenceRoom" style="display: none">
+        <video id="localVideo" autoplay></video>
+        <video id="remoteVideo" autoplay></video>
+
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
